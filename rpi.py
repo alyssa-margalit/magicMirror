@@ -19,11 +19,10 @@ b = 0
 
 if __name__ == '__main__':
 	setText("hi")
-    setRGB(255,0,0)
-    r = int(input())
+	setRGB(255,0,0)
+	b = int(input())
 	while True:
         #have rpi read distance and button status, publish this data
-        
         distance = grovepi.ultrasonicRead(sonic)
         dist = int(distance)
         print(distance)
