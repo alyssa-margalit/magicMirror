@@ -49,6 +49,8 @@ if __name__ == '__main__':
 			print("green value: "+ str(g))
 		setRGB(r,g,b)
 		setText_norefresh(str(r)+","+str(g)+","+str(b))
+		if b == 51:
+			setText("/n success!")
 		time.sleep(.5)
        
 
