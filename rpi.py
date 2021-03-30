@@ -21,7 +21,7 @@ b = 0
 if __name__ == '__main__':
 	setText("hi")
 	setRGB(255,0,0)
-	b = int(input())
+	#b = int(input())
 	while True:
 		distance = grovepi.ultrasonicRead(sonic)
 		dist = int(distance)
@@ -34,7 +34,7 @@ if __name__ == '__main__':
 		button_status = digitalRead(button)
 		if button_status:
 			g = g+2
-			print("green value: "+ srt(g))
+			print("green value: "+ str(g))
 		setRGB(r,g,b)
 		time.sleep(1)
        
