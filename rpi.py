@@ -25,18 +25,21 @@ if __name__ == '__main__':
 	while True:
 		distance = grovepi.ultrasonicRead(sonic)
 		dist = int(distance)
-		r = dist
+		r = 1 - (dist/500)
+		r = r*255
 		print("red value: "+ str(r))
 		distance2 = grovepi.ultrasonicRead(sonic2)
 		dist2 = int(distance2)
-		b = dist2
+		b = 1 - (dist2/500)
+		b = b*255
 		print("blue value: "+ str(b))
 		button_status = digitalRead(button)
 		if button_status:
 			g = g+2
 			print("green value: "+ str(g))
 		setRGB(r,g,b)
-		time.sleep(1)
+		setText(str(r)+","+str(g)+","+str(b))
+		time.sleep(.3)
        
 
 
