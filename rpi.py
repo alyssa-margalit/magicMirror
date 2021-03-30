@@ -26,8 +26,9 @@ if __name__ == '__main__':
 		distance = grovepi.ultrasonicRead(sonic)
 		dist = int(distance)
 		r = dist
-		if r>255:
-			r = 255
+		if r>20:
+			r = 20
+		r = int((r/20)*255)
 		#r = 1 - (dist/500)
 		#r = int(r*255)
 		print("red value: "+ str(r))
@@ -36,8 +37,9 @@ if __name__ == '__main__':
 		#b = 1 - (dist2/500)
 		#b = int(b*255)
 		b = dist2
-		if b>255:
-			b = 255
+		if b>20:
+			b = 20
+		b = int((b/20)*255)
 		print("blue value: "+ str(b))
 		button_status = digitalRead(button)
 		if button_status:
