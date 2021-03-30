@@ -48,8 +48,8 @@ if __name__ == '__main__':
 				g = 0
 			print("green value: "+ str(g))
 		setRGB(r,g,b)
-		setText(str(r)+","+str(g)+","+str(b))
-		time.sleep(.3)
+		setText_norefresh(str(r)+","+str(g)+","+str(b))
+		time.sleep(.5)
        
 
 
