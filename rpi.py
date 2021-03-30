@@ -50,7 +50,8 @@ if __name__ == '__main__':
 		setRGB(r,g,b)
 		setText_norefresh(str(r)+","+str(g)+","+str(b))
 		if b == 51:
-			setText("/n success!")
+			setText("\n success!")
+			break
 		time.sleep(.5)
        
 
