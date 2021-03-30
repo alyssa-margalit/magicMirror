@@ -19,7 +19,7 @@ b = 0
 
 
 if __name__ == '__main__':
-	#setText("hi")
+	setText(" ")
 	setRGB(255,0,0)
 	#b = int(input())
 	while True:
